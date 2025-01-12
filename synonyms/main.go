@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	"domain/src/thesaurus"
+	"domain/thesaurus"
 	"fmt"
 	"github.com/joho/godotenv"
 	"log"
