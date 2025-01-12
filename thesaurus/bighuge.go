@@ -23,7 +23,7 @@ type synonyms struct {
 
 func (b *BigHuge) Synonyms(term string) ([]string, error) {
 	var syns []string
-	resp, err := http.Get("http://words.bighugelabs.com/api/2/" + b.APIKey + "/" + term + "/json")
+	resp, err := http.Get("https://words.bighugelabs.com/api/2/" + b.APIKey + "/word" + "/json")
 	if err != nil {
 		return syns, errors.New("bighuge: Failed when looking for synonyms for " + term + "" + err.Error())
 	}
